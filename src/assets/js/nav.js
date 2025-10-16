@@ -8,6 +8,8 @@ const about = document.querySelector('#About\\ Us')
 const contact = document.querySelector('#Contact')
 const projects = document.querySelector('#Our\\ Work')
 const reviews = document.querySelector('#Reviews')
+const blog = document.querySelector('#Blog')
+const gallery = document.querySelector('#Gallery')      
 
 const screenWidth = window.screen.width;
 
@@ -56,8 +58,8 @@ hamburgerMenu.addEventListener('click', function () {
         serviceMenu.setAttribute("aria-expanded", false);
         serviceMenu.classList.remove("open");
         if (screenWidth < 770) {
-            about.style.display = 'block'
-            contact.style.display = 'block'
+            if (about) about.style.setProperty('display', 'block', 'important')
+            if (contact) contact.style.setProperty('display', 'block', 'important')
         }
     }
 });
@@ -68,10 +70,12 @@ serviceMenu.addEventListener('click', function () {
         serviceMenu.setAttribute("aria-expanded", true);
         serviceMenu.classList.add("open");
         if (screenWidth < 770) {
-            about.style.display = 'none'
-            contact.style.display = 'none'
-            projects.style.display = 'none'
-            reviews.style.display = 'none'
+            if (about) about.style.setProperty('display', 'none', 'important')
+            if (contact) contact.style.setProperty('display', 'none', 'important')
+            if (projects) projects.style.setProperty('display', 'none', 'important')
+            if (reviews) reviews.style.setProperty('display', 'none', 'important')
+            if (blog) blog.style.setProperty('display', 'none', 'important')
+            if (gallery) gallery.style.setProperty('display', 'none', 'important')
         }
 
 
@@ -79,10 +83,12 @@ serviceMenu.addEventListener('click', function () {
         serviceMenu.setAttribute("aria-expanded", false);
         serviceMenu.classList.remove("open");
         if (screenWidth < 770) {
-            about.style.display = 'block'
-            contact.style.display = 'block'
-            projects.style.display = 'block'
-            reviews.style.display = 'block'
+            if (about) about.style.setProperty('display', 'block', 'important')
+            if (contact) contact.style.setProperty('display', 'block', 'important')
+            if (projects) projects.style.setProperty('display', 'block', 'important')
+            if (reviews) reviews.style.setProperty('display', 'block', 'important')
+            if (blog) blog.style.setProperty('display', 'block', 'important')
+            if (gallery) gallery.style.setProperty('display', 'block', 'important')
         }
     }
 });
