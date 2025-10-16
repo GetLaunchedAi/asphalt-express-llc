@@ -1,20 +1,20 @@
 {
-  "name": "Miracle Carpet Care",
-  "email": "info@miraclecarpetcare.biz",
-  "phone": "248-721-6136",
-  "phoneFormatted": "(248) 721-6136",
+  "name": "Asphalt Express, LLC",
+  "email": "asphaltexpresspaving7@gmail.com",
+  "phone": "248-889-5357",
+  "phoneFormatted": "(248) 889-5357",
   "address": {
-    "lineOne": "33228 West Twelve Mile, Suite 210",
-    "lineTwo": "Farmington Hills, MI 48334",
-    "city": "Farmington Hills",
-    "county": "Oakland County",
-    "postcode": "48334",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=33228+West+Twelve+Mile+Suite+210+Farmington+Hills+MI+48334"
+    "lineOne": "Serving Michigan",
+    "lineTwo": "Oakland, Livingston, Wayne & Macomb Counties",
+    "city": "Michigan",
+    "county": "Multiple Counties",
+    "postcode": "Various",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Michigan"
   },
-  "domain": "www.miraclecarpetcare.biz",
+  "domain": "www.asphaltexpressllc.com",
   "businessHours": {
     "weekdays": "Mon - Sat: 8:00AM-6:00PM",
     "weekend": "Sun: Closed"
   },
-  "serviceAreas": "Farmington Hills, Novi, and throughout southeastern Michigan including Oakland, Wayne, Macomb County and surrounding areas"
+  "serviceAreas": "Wixom, Highland, White Lake, West Bloomfield, Bloomfield Hills, Farmington Hills, Farmington, Rochester, Troy, Howell, Holly, Novi, South Lyon, New Hudson, Rochester Hills, Fenton, Pinckney, Hartland, Livonia, Waterford, Northville, Lake Orion, Ortonville and throughout Oakland, Livingston, Wayne & Macomb Counties"
 }
