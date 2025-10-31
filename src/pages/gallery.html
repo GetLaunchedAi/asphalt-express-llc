@@ -333,7 +333,7 @@ eleventyNavigation:
         const imagePath = `/images/portfolio/port_${index}.${extension}`;
         
         return `
-            <div class="project-card">
+            <div class="project-card fx slide-top staggered-f" style="--i:${index}">
                 <div class="project-image">
                     <img src="${imagePath}" alt="${project.description}" class="project-img" loading="lazy">
                     <div class="project-overlay">

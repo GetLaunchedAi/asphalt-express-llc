@@ -832,6 +832,173 @@
 }
 
 /*-- -------------------------- -->
+<---    Payment Methods         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #payment-methods {
+    padding: var(--sectionPadding);
+    background-color: #f8f8f8;
+    position: relative;
+  }
+
+  #payment-methods .cs-container {
+    width: 100%;
+    max-width: 82.5rem;
+    margin: auto;
+  }
+
+  #payment-methods .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 37.375rem;
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #payment-methods .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+  }
+
+  #payment-methods .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
+  }
+
+  #payment-methods .cs-payment-group {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #payment-methods .cs-payment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 12rem;
+  }
+
+  #payment-methods .cs-payment-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  #payment-methods .cs-payment-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 80px;
+    height: 50px;
+  }
+
+  #payment-methods .cs-payment-icon svg {
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+    max-height: 50px;
+    display: block;
+  }
+
+  #payment-methods .cs-payment-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--headerColor);
+    text-align: center;
+    line-height: 1.3em;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #payment-methods .cs-payment-group {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+
+  #payment-methods .cs-payment-item {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #payment-methods .cs-payment-group {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
+  }
+
+  #payment-methods .cs-payment-item {
+    max-width: 10rem;
+  }
+
+  #payment-methods .cs-payment-icon {
+    max-width: 90px;
+    height: 56px;
+  }
+
+  #payment-methods .cs-payment-icon svg {
+    max-width: 90px;
+    max-height: 56px;
+  }
+
+  #payment-methods .cs-payment-label {
+    font-size: 1rem;
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #payment-methods {
+    background-color: var(--medium);
+  }
+
+  body.dark-mode #payment-methods .cs-title,
+  body.dark-mode #payment-methods .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #payment-methods .cs-payment-item {
+    background-color: var(--dark);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  body.dark-mode #payment-methods .cs-payment-item:hover {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  body.dark-mode #payment-methods .cs-payment-label {
+    color: var(--bodyTextColorWhite);
+  }
+}
+
+/*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
 
