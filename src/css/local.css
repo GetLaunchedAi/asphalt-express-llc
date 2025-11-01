@@ -1186,3 +1186,123 @@
     }
   }
 }
+
+/*-- -------------------------- -->
+<---       Service Area Map      -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #service-area-map {
+    padding: var(--sectionPadding);
+    background: #f8f9fa;
+  }
+
+  body.dark-mode #service-area-map {
+    background: var(--dark);
+  }
+
+  #service-area-map .cs-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #service-area-map .cs-text {
+    max-width: 46.375rem;
+    margin: 0 auto;
+  }
+
+  .cs-map-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .cs-map-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .cs-map-container iframe {
+    border-radius: 12px;
+  }
+
+  .cs-service-areas {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark-mode .cs-service-areas {
+    background: var(--medium);
+  }
+
+  .cs-areas-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--headerColor);
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+  }
+
+  .cs-areas-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cs-area-item {
+    padding: 0.5rem 1rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .cs-area-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+  }
+
+  .cs-area-item a:hover {
+    opacity: 0.8;
+  }
+
+  .cs-area-item[style*="primaryDark"] a {
+    font-weight: 700;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .cs-map-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .cs-map-container {
+    flex: 2;
+  }
+
+  .cs-service-areas {
+    flex: 1;
+    margin-left: 2rem;
+  }
+
+  .cs-areas-list {
+    grid-template-columns: 1fr;
+  }
+}
