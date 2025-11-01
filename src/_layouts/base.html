@@ -83,6 +83,16 @@
     <main id="main">{{ content | safe }}</main>
     {% include "footer.html" %}
 
+    <!-- Sticky Free Estimate Banner - All Pages -->
+    <div id="free-estimate-banner" class="free-estimate-banner">
+        <div class="free-estimate-banner-container">
+            <div class="free-estimate-banner-content">
+                <span class="free-estimate-text">FREE ESTIMATES</span>
+                <a href="tel:2488895357" class="free-estimate-phone">{{ client.phoneFormatted }}</a>
+            </div>
+        </div>
+    </div>
+
     <script defer src="/assets/js/nav.js"></script>
     <script defer src="/assets/js/dark.js"></script>
 
