@@ -303,6 +303,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+
   #sbs-1206 .cs-container,
   #sbs-1206 .cs-container-reverse {
     max-width: 60rem;
@@ -325,6 +326,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+
   #sbs-1206 .cs-container,
   #sbs-1206 .cs-container-reverse {
     max-width: 80rem;
@@ -403,6 +405,7 @@
 
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+
   body.dark-mode #sbs-1206 .cs-title,
   body.dark-mode #sbs-1206 .cs-text,
   body.dark-mode #sbs-1206 .cs-li,
@@ -505,7 +508,7 @@
 
 
   #services-1329 .cs-link {
-  text-decoration:none;
+    text-decoration: none;
 
     width: 100%;
     height: 100%;
@@ -643,6 +646,7 @@
 
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+
   body.dark-mode #services-1329 .cs-title,
   body.dark-mode #services-1329 .cs-text {
     color: var(--bodyTextColorWhite);
@@ -1172,15 +1176,19 @@
     0% {
       opacity: 0;
     }
+
     6.67% {
       opacity: 1;
     }
+
     26.67% {
       opacity: 1;
     }
+
     33.33% {
       opacity: 0;
     }
+
     100% {
       opacity: 0;
     }
@@ -1305,4 +1313,27 @@
   .cs-areas-list {
     grid-template-columns: 1fr;
   }
+}
+
+.write-review {
+  background-color: #4285F4;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  background-color: var(--primary);
+  pointer-events: auto;
+  color: var(--bodyTextColorWhite);
+  border-radius: 0.5rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
