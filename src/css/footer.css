@@ -8,7 +8,7 @@
     background: #1C1C1C;
     padding: 5.25rem 0 1.25rem;
     font-size: min(4vw, 1.2em);
-    margin-bottom: 90px; /* Space for sticky free estimate banner */
+    /* margin-bottom: 90px; Space for sticky free estimate banner */
   }
 
   #footer .left-section {
@@ -169,7 +169,7 @@
 @media only screen and (min-width: 64em) {
   #footer {
     font-size: min(1.2vw, 1em);
-    margin-bottom: 75px; /* Space for sticky free estimate banner */
+    /* margin-bottom: 75px; Space for sticky free estimate banner */
   }
 
   #footer .container {

@@ -79,11 +79,7 @@
     <a class="skip" aria-label="skip to main content" href="#main">Skip To Main Content</a>
     <script defer src="/assets/js/animations.js"></script>
 
-    {% include "header.html" %}
-    <main id="main">{{ content | safe }}</main>
-    {% include "footer.html" %}
-
-    <!-- Sticky Free Estimate Banner - All Pages -->
+    <!-- Free Estimate Banner - Top of Page -->
     <div id="free-estimate-banner" class="free-estimate-banner">
         <div class="free-estimate-banner-container">
             <div class="free-estimate-banner-content">
@@ -92,6 +88,10 @@
             </div>
         </div>
     </div>
+
+    {% include "header.html" %}
+    <main id="main">{{ content | safe }}</main>
+    {% include "footer.html" %}
 
     <script defer src="/assets/js/nav.js"></script>
     <script defer src="/assets/js/dark.js"></script>
