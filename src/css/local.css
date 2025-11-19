@@ -673,6 +673,8 @@
     width: 100%;
     max-width: 69rem;
     margin: auto;
+    box-sizing: border-box;
+    padding: 0;
   }
 
   #reviews .cs-topper {
@@ -712,10 +714,11 @@
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
     max-width: 60rem;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   #reviews .cs-item {
@@ -723,7 +726,7 @@
     list-style: none;
     width: 100%;
     margin: 0;
-    padding: 2.5rem 2rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1.25rem, 3vw, 2rem);
     background-color: #fff;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
     border-radius: 1.5rem;
@@ -732,6 +735,10 @@
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   #reviews .cs-item:hover {
@@ -753,7 +760,7 @@
   }
 
   #reviews .cs-item-p {
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
     line-height: 1.6em;
     text-align: left;
     width: 100%;
@@ -761,6 +768,10 @@
     color: #4a4a4a;
     font-style: italic;
     position: relative;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding-left: 1.5rem;
   }
 
   #reviews .cs-item-p::before {
@@ -769,7 +780,7 @@
     color: var(--primary);
     position: absolute;
     top: -0.5rem;
-    left: -0.5rem;
+    left: 0;
     font-family: serif;
     opacity: 0.3;
   }
@@ -1241,9 +1252,11 @@
 
   .cs-service-areas {
     background: white;
-    padding: 2rem;
+    padding: clamp(1rem, 4vw, 2rem);
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
   }
 
   body.dark-mode .cs-service-areas {
@@ -1260,21 +1273,27 @@
 
   .cs-areas-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(0.5rem, 2vw, 1rem);
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .cs-area-item {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem clamp(0.5rem, 2vw, 1rem);
     background: var(--primary);
     color: white;
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
+    box-sizing: border-box;
+    min-width: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .cs-area-item a {
@@ -1283,6 +1302,9 @@
     display: block;
     width: 100%;
     transition: opacity 0.3s ease;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .cs-area-item a:hover {
