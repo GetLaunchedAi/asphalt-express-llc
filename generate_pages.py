@@ -14,7 +14,10 @@ new_cities = [
     ('Pontiac', 'pontiac'),
     ('Sterling Heights', 'sterling-heights'),
     ('Southfield', 'southfield'),
-    ('Clarkston', 'clarkston')
+    ('Clarkston', 'clarkston'),
+    ('Plymouth', 'plymouth'),
+    ('Warren', 'warren'),
+    ('Commerce', 'commerce')
 ]
 
 # Existing cities list
@@ -404,26 +407,26 @@ eleventyNavigation:
 
   <script>
     const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-    for (const item of faqItems) {
+    for (const item of faqItems) {{
       const onClick = () => {{
         item.classList.toggle('active')
       }}
       item.addEventListener('click', onClick)
-    }
+    }}
   </script>
 </section>
 '''
     return content
 
 def main():
-    """Generate all service pages for new cities."""
+    """Generate all service pages for all cities."""
     base_dir = 'src/pages/servicepages/cities'
     
     # Create directory if it doesn't exist
     os.makedirs(base_dir, exist_ok=True)
     
     count = 0
-    for city_name, city_slug in new_cities:
+    for city_name, city_slug in all_cities:
         for service_config in services:
             filename = f'{service_config[5]}-in-{city_slug}.html'
             filepath = os.path.join(base_dir, filename)
