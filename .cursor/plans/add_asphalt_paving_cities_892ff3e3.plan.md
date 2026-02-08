@@ -44,5 +44,3 @@ todos:
 - Keep the “Areas We Serve” lists consistent across the new city pages by including the full list (existing + new) with the current city highlighted.
 
 ## Notes on the requested list
-
-- `Sterling Heights` and `Warren` already exist as asphalt paving city pages and are already linked on the homepage/service list; I will not duplicate them, only ensure the lists remain correct.
